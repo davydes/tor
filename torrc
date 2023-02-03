@@ -1,0 +1,4 @@
+SocksPort 0.0.0.0:9050
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+Bridge <GET YOU OWN HERE: https://bridges.torproject.org/options/>
+UseBridges 1

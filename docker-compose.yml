@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tor:
+    build: .
+    image: tor
+    restart: unless-stopped
+    volumes:
+      - ./torrc:/etc/tor/torrc
+    ports:
+      - "127.0.0.1:9050:9050"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "5"
